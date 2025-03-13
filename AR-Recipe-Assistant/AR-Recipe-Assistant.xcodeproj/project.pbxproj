@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E98FC2502D8129FE00443E9F /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FC2462D8129FD00443E9F /* Utils.framework */; };
+		E98FC25B2D8129FE00443E9F /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FC2462D8129FD00443E9F /* Utils.framework */; };
+		E98FC25C2D8129FE00443E9F /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E98FC2462D8129FD00443E9F /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E98FC2222D7FE6DD00443E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FC2072D7FE6DB00443E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98FC20E2D7FE6DB00443E9F;
+			remoteInfo = "AR-Recipe-Assistant";
+		};
+		E98FC22C2D7FE6DD00443E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FC2072D7FE6DB00443E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98FC20E2D7FE6DB00443E9F;
+			remoteInfo = "AR-Recipe-Assistant";
+		};
+		E98FC2512D8129FE00443E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FC2072D7FE6DB00443E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98FC2452D8129FD00443E9F;
+			remoteInfo = Utils;
+		};
+		E98FC2532D8129FE00443E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FC2072D7FE6DB00443E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98FC20E2D7FE6DB00443E9F;
+			remoteInfo = "AR-Recipe-Assistant";
+		};
+		E98FC2592D8129FE00443E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FC2072D7FE6DB00443E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98FC2452D8129FD00443E9F;
+			remoteInfo = Utils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E98FC2612D8129FE00443E9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E98FC25C2D8129FE00443E9F /* Utils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E98FC20F2D7FE6DB00443E9F /* AR-Recipe-Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Recipe-Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98FC2212D7FE6DD00443E9F /* AR-Recipe-AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-Recipe-AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98FC22B2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-Recipe-AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98FC2462D8129FD00443E9F /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98FC24F2D8129FE00443E9F /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E98FC25D2D8129FE00443E9F /* Exceptions for "Utils" folder in "Utils" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				IntPair.swift,
+			);
+			publicHeaders = (
+				Utils.h,
+			);
+			target = E98FC2452D8129FD00443E9F /* Utils */;
+		};
+		E98FC2652D812A0300443E9F /* Exceptions for "Utils" folder in "AR-Recipe-Assistant" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				IntPair.swift,
+			);
+			target = E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AR-Recipe-Assistant";
+			sourceTree = "<group>";
+		};
+		E98FC2242D7FE6DD00443E9F /* AR-Recipe-AssistantTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AR-Recipe-AssistantTests";
+			sourceTree = "<group>";
+		};
+		E98FC22E2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AR-Recipe-AssistantUITests";
+			sourceTree = "<group>";
+		};
+		E98FC2472D8129FE00443E9F /* Utils */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E98FC2652D812A0300443E9F /* Exceptions for "Utils" folder in "AR-Recipe-Assistant" target */,
+				E98FC25D2D8129FE00443E9F /* Exceptions for "Utils" folder in "Utils" target */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E98FC2552D8129FE00443E9F /* UtilsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E98FC20C2D7FE6DB00443E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98FC25B2D8129FE00443E9F /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC21E2D7FE6DD00443E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2282D7FE6DD00443E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2432D8129FD00443E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC24C2D8129FE00443E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98FC2502D8129FE00443E9F /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E98FC2062D7FE6DB00443E9F = {
+			isa = PBXGroup;
+			children = (
+				E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */,
+				E98FC2242D7FE6DD00443E9F /* AR-Recipe-AssistantTests */,
+				E98FC22E2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */,
+				E98FC2472D8129FE00443E9F /* Utils */,
+				E98FC2552D8129FE00443E9F /* UtilsTests */,
+				E98FC2102D7FE6DB00443E9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E98FC2102D7FE6DB00443E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E98FC20F2D7FE6DB00443E9F /* AR-Recipe-Assistant.app */,
+				E98FC2212D7FE6DD00443E9F /* AR-Recipe-AssistantTests.xctest */,
+				E98FC22B2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests.xctest */,
+				E98FC2462D8129FD00443E9F /* Utils.framework */,
+				E98FC24F2D8129FE00443E9F /* UtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E98FC2412D8129FD00443E9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98FC2352D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-Assistant" */;
+			buildPhases = (
+				E98FC20B2D7FE6DB00443E9F /* Sources */,
+				E98FC20C2D7FE6DB00443E9F /* Frameworks */,
+				E98FC20D2D7FE6DB00443E9F /* Resources */,
+				E98FC2612D8129FE00443E9F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98FC25A2D8129FE00443E9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */,
+			);
+			name = "AR-Recipe-Assistant";
+			packageProductDependencies = (
+			);
+			productName = "AR-Recipe-Assistant";
+			productReference = E98FC20F2D7FE6DB00443E9F /* AR-Recipe-Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E98FC2202D7FE6DD00443E9F /* AR-Recipe-AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98FC2382D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-AssistantTests" */;
+			buildPhases = (
+				E98FC21D2D7FE6DD00443E9F /* Sources */,
+				E98FC21E2D7FE6DD00443E9F /* Frameworks */,
+				E98FC21F2D7FE6DD00443E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98FC2232D7FE6DD00443E9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E98FC2242D7FE6DD00443E9F /* AR-Recipe-AssistantTests */,
+			);
+			name = "AR-Recipe-AssistantTests";
+			packageProductDependencies = (
+			);
+			productName = "AR-Recipe-AssistantTests";
+			productReference = E98FC2212D7FE6DD00443E9F /* AR-Recipe-AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E98FC22A2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98FC23B2D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-AssistantUITests" */;
+			buildPhases = (
+				E98FC2272D7FE6DD00443E9F /* Sources */,
+				E98FC2282D7FE6DD00443E9F /* Frameworks */,
+				E98FC2292D7FE6DD00443E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98FC22D2D7FE6DD00443E9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E98FC22E2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */,
+			);
+			name = "AR-Recipe-AssistantUITests";
+			packageProductDependencies = (
+			);
+			productName = "AR-Recipe-AssistantUITests";
+			productReference = E98FC22B2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E98FC2452D8129FD00443E9F /* Utils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98FC25E2D8129FE00443E9F /* Build configuration list for PBXNativeTarget "Utils" */;
+			buildPhases = (
+				E98FC2412D8129FD00443E9F /* Headers */,
+				E98FC2422D8129FD00443E9F /* Sources */,
+				E98FC2432D8129FD00443E9F /* Frameworks */,
+				E98FC2442D8129FD00443E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E98FC2472D8129FE00443E9F /* Utils */,
+			);
+			name = Utils;
+			packageProductDependencies = (
+			);
+			productName = Utils;
+			productReference = E98FC2462D8129FD00443E9F /* Utils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E98FC24E2D8129FE00443E9F /* UtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98FC2622D8129FE00443E9F /* Build configuration list for PBXNativeTarget "UtilsTests" */;
+			buildPhases = (
+				E98FC24B2D8129FE00443E9F /* Sources */,
+				E98FC24C2D8129FE00443E9F /* Frameworks */,
+				E98FC24D2D8129FE00443E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98FC2522D8129FE00443E9F /* PBXTargetDependency */,
+				E98FC2542D8129FE00443E9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E98FC2552D8129FE00443E9F /* UtilsTests */,
+			);
+			name = UtilsTests;
+			packageProductDependencies = (
+			);
+			productName = UtilsTests;
+			productReference = E98FC24F2D8129FE00443E9F /* UtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E98FC2072D7FE6DB00443E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					E98FC20E2D7FE6DB00443E9F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E98FC2202D7FE6DD00443E9F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E98FC20E2D7FE6DB00443E9F;
+					};
+					E98FC22A2D7FE6DD00443E9F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E98FC20E2D7FE6DB00443E9F;
+					};
+					E98FC2452D8129FD00443E9F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E98FC24E2D8129FE00443E9F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E98FC20E2D7FE6DB00443E9F;
+					};
+				};
+			};
+			buildConfigurationList = E98FC20A2D7FE6DB00443E9F /* Build configuration list for PBXProject "AR-Recipe-Assistant" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E98FC2062D7FE6DB00443E9F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E98FC2102D7FE6DB00443E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */,
+				E98FC2202D7FE6DD00443E9F /* AR-Recipe-AssistantTests */,
+				E98FC22A2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */,
+				E98FC2452D8129FD00443E9F /* Utils */,
+				E98FC24E2D8129FE00443E9F /* UtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E98FC20D2D7FE6DB00443E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC21F2D7FE6DD00443E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2292D7FE6DD00443E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2442D8129FD00443E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC24D2D8129FE00443E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E98FC20B2D7FE6DB00443E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC21D2D7FE6DD00443E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2272D7FE6DD00443E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC2422D8129FD00443E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98FC24B2D8129FE00443E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E98FC2232D7FE6DD00443E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */;
+			targetProxy = E98FC2222D7FE6DD00443E9F /* PBXContainerItemProxy */;
+		};
+		E98FC22D2D7FE6DD00443E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */;
+			targetProxy = E98FC22C2D7FE6DD00443E9F /* PBXContainerItemProxy */;
+		};
+		E98FC2522D8129FE00443E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98FC2452D8129FD00443E9F /* Utils */;
+			targetProxy = E98FC2512D8129FE00443E9F /* PBXContainerItemProxy */;
+		};
+		E98FC2542D8129FE00443E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98FC20E2D7FE6DB00443E9F /* AR-Recipe-Assistant */;
+			targetProxy = E98FC2532D8129FE00443E9F /* PBXContainerItemProxy */;
+		};
+		E98FC25A2D8129FE00443E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98FC2452D8129FD00443E9F /* Utils */;
+			targetProxy = E98FC2592D8129FE00443E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E98FC2332D7FE6DD00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E98FC2342D7FE6DD00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E98FC2362D7FE6DD00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUZKCGKGPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E98FC2372D7FE6DD00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUZKCGKGPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E98FC2392D7FE6DD00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-Recipe-Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-Recipe-Assistant";
+			};
+			name = Debug;
+		};
+		E98FC23A2D7FE6DD00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-Recipe-Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-Recipe-Assistant";
+			};
+			name = Release;
+		};
+		E98FC23C2D7FE6DD00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-Recipe-Assistant";
+			};
+			name = Debug;
+		};
+		E98FC23D2D7FE6DD00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Paul.app.AR-Recipe-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-Recipe-Assistant";
+			};
+			name = Release;
+		};
+		E98FC25F2D8129FE00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QUZKCGKGPV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Paul.app.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E98FC2602D8129FE00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QUZKCGKGPV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Paul.app.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E98FC2632D8129FE00443E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.Paul.app.UtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-Recipe-Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-Recipe-Assistant";
+			};
+			name = Debug;
+		};
+		E98FC2642D8129FE00443E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.Paul.app.UtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-Recipe-Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-Recipe-Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E98FC20A2D7FE6DB00443E9F /* Build configuration list for PBXProject "AR-Recipe-Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC2332D7FE6DD00443E9F /* Debug */,
+				E98FC2342D7FE6DD00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98FC2352D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC2362D7FE6DD00443E9F /* Debug */,
+				E98FC2372D7FE6DD00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98FC2382D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC2392D7FE6DD00443E9F /* Debug */,
+				E98FC23A2D7FE6DD00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98FC23B2D7FE6DD00443E9F /* Build configuration list for PBXNativeTarget "AR-Recipe-AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC23C2D7FE6DD00443E9F /* Debug */,
+				E98FC23D2D7FE6DD00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98FC25E2D8129FE00443E9F /* Build configuration list for PBXNativeTarget "Utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC25F2D8129FE00443E9F /* Debug */,
+				E98FC2602D8129FE00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98FC2622D8129FE00443E9F /* Build configuration list for PBXNativeTarget "UtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98FC2632D8129FE00443E9F /* Debug */,
+				E98FC2642D8129FE00443E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E98FC2072D7FE6DB00443E9F /* Project object */;
+}
