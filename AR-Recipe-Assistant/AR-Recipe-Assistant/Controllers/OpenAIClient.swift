@@ -25,12 +25,14 @@ func encodeImageToBase64(image: UIImage) -> String? {
     return image.pngData()?.base64EncodedString()
 }
 
-func queryOpenAI(prompt: String, imageBase64: String, apiKey: String, completion: @escaping (String?) -> Void) {
+func queryOpenAI(prompt: String, imageBase64: String, completion: @escaping (String?) -> Void) {
     let url = URL(string: "https://api.openai.com/v1/chat/completions")!
+    let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"]
+
     
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
-    request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+    request.addValue("Bearer \(apiKey ?? "NO_API_KEY")", forHTTPHeaderField: "Authorization")
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
     let requestBody: [String: Any] = [
@@ -44,7 +46,7 @@ func queryOpenAI(prompt: String, imageBase64: String, apiKey: String, completion
                     ]
                 ]
             ],
-            "max_tokens": 100
+            "max_tokens": 1000
         ]
   
     request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
@@ -66,14 +68,45 @@ func queryOpenAI(prompt: String, imageBase64: String, apiKey: String, completion
     task.resume()
 }
 
-// Example usage:
-//if let image = UIImage(named: "kitten.jpeg"),
-//   let base64Image = encodeImageToBase64(image: image) {
-//    queryOpenAI(prompt: "Describe this image", imageBase64: base64Image, apiKey: "?") { response in
-//        if let text = response {
-//            print("Response:", text)
-//        } else {
-//            print("Failed to get response.")
-//        }
-//    }
-//}
+
+func queryOpenAI(prompt: String, completion: @escaping (String?) -> Void) {
+    let url = URL(string: "https://api.openai.com/v1/chat/completions")!
+    let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"]
+
+    
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
+    request.addValue("Bearer \(apiKey ?? "NO_API_KEY")", forHTTPHeaderField: "Authorization")
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+    let requestBody: [String: Any] = [
+            "model": "gpt-4o-mini",
+            "messages": [
+                [
+                    "role": "user",
+                    "content": [
+                        ["type": "text", "text": prompt]
+                    ]
+                ]
+            ],
+            "max_tokens": 1000
+        ]
+  
+    request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
+
+    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        guard let data = data, error == nil else {
+            print("Error:", error ?? "Unknown error")
+            completion(nil)
+            return
+        }
+        
+        if let response = try? JSONDecoder().decode(OpenAIResponse.self, from: data) {
+            completion(response.choices.first?.message.content)
+        } else {
+            completion(nil)
+        }
+    }
+    
+    task.resume()
+}

@@ -8,21 +8,27 @@
 import Vision
 import ARKit
 
+struct TrackedObject {
+    let label: String
+    let center: CGPoint
+}
+
+
 class VisionProcessor {
     
     static var shared: VisionProcessor!
     
     
     // The following contains the COCO classes that are related to food and/or kitchen items
-//    private var filteredItems: Set<String> = ["wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake"]
-    
-    
-    private var filteredItems: Set<String> = ["tv"]
+    private var filteredItems: Set<String> = ["fork", "knife", "bowl", "banana", "apple", "orange", "sink"]
     
     private var request: VNCoreMLRequest?
     private var isProcessingFrame = false
     
     private var currPredictions: [VNRecognizedObjectObservation]!
+    private var currPredictionsWithObjects: [VNRecognizedObjectObservation] = []
+    
+    private var confidenceThreshold = 0.5
     
     // Is this best way???
     private weak var uiManager: UIManager?
@@ -40,7 +46,7 @@ class VisionProcessor {
     }
     
     private func setupVisionModel() {
-        guard let model = try? yolov8n().model else {
+        guard let model = try? yolov8x().model else {
             fatalError("Failed to load the model")
         }
         let visionModel = try? VNCoreMLModel(for: model)
@@ -78,7 +84,13 @@ class VisionProcessor {
         guard let predictions = request.results as? [VNRecognizedObjectObservation] else { return }
         
         self.currPredictions = filterPredictions(predictions: predictions)
+        
+        if self.currPredictions.count > 0 {
+            self.currPredictionsWithObjects = self.currPredictions
+        }
+        
         self.uiManager!.setBoundingBoxPredictions(predictions: self.currPredictions)
+        
     }
     
     func getPredictions() -> [VNRecognizedObjectObservation] {
@@ -88,4 +100,24 @@ class VisionProcessor {
         
         return self.currPredictions
     }
+    
+    func getCurrentWorldStateString() -> String {
+        let predictions = self.currPredictionsWithObjects
+        var lines: [String] = []
+
+        for prediction in predictions {
+            guard let label = prediction.label else { continue }
+
+            let bbox = prediction.boundingBox
+            let centerX = ((bbox.minX + bbox.maxX) / 2.0) * 100
+            let centerY = ((bbox.minY + bbox.maxY) / 2.0) * 100
+
+            let formatted = String(format: "- %@ at (%.2f, %.2f)", label, centerX, centerY)
+            lines.append(formatted)
+        }
+
+        return lines.joined(separator: "\n")
+    }
 }
+
+

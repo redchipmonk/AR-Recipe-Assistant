@@ -93,11 +93,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AR-Recipe-Assistant";
-			sourceTree = "<group>";
-		};
 		E98FC2242D7FE6DD00443E9F /* AR-Recipe-AssistantTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "AR-Recipe-AssistantTests";
@@ -120,6 +115,11 @@
 		E98FC2552D8129FE00443E9F /* UtilsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+		E98FC3392D88BB2D00443E9F /* AR-Recipe-Assistant */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AR-Recipe-Assistant";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -168,7 +168,7 @@
 		E98FC2062D7FE6DB00443E9F = {
 			isa = PBXGroup;
 			children = (
-				E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */,
+				E98FC3392D88BB2D00443E9F /* AR-Recipe-Assistant */,
 				E98FC2242D7FE6DD00443E9F /* AR-Recipe-AssistantTests */,
 				E98FC22E2D7FE6DD00443E9F /* AR-Recipe-AssistantUITests */,
 				E98FC2472D8129FE00443E9F /* Utils */,
@@ -217,7 +217,7 @@
 				E98FC25A2D8129FE00443E9F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				E98FC2112D7FE6DB00443E9F /* AR-Recipe-Assistant */,
+				E98FC3392D88BB2D00443E9F /* AR-Recipe-Assistant */,
 			);
 			name = "AR-Recipe-Assistant";
 			packageProductDependencies = (

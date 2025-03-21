@@ -17,15 +17,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var uiManager: UIManager!
     var arSessionHandler: ARSessionHandler!
+    var recipeManager: ReciperManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        arSessionHandler = ARSessionHandler(sceneView: sceneView)
+        
+        
         uiManager = UIManager(viewController: self)
+        recipeManager = ReciperManager(uiManager: uiManager, arSessionHandler: arSessionHandler)
         VisionProcessor.initialize(uiManager: uiManager)
         
-        arSessionHandler = ARSessionHandler(sceneView: sceneView)
-
-        uiManager.setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
