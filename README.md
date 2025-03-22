@@ -30,11 +30,12 @@ This project introduces two generalizable methods for automatic recipe step dete
 ### Install & Run
 ```bash
 git clone https://github.com/your-username/AR-Recipe-Assistant.git
-cd AR-Recipe-Assistant
+cd AR-Recipe-Assistant/AR-Recipe-Assistant
+open AR-Recipe-Assistant.xcodeproj
 ```
-1. Configure OpenAI API key in Secrets.swift
+1. Configure the OpenAI API key in Secrets.swift
 2. Choose YOLO or VLM from settings
-3. Press "Generate Recipe" while pointing the camera at ingredients
+3. Press "Generate Recipe" while pointing the camera at the ingredients
 
 ## License
 This project is licensed under the MIT License.
