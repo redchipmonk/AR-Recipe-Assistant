@@ -1,41 +1,40 @@
 # AR-Recipe-Assistant
 
-An augmented reality (AR) application that leverages computer vision and SLAM to detect and localize food items, then uses a GPT-base API to generate recipes. The system integrates YOLO for object detection, ORB-SLAM for tracking, and ARCore for the interface.
+A real-time augmented reality (AR) application that automatically detects the current step in a recipe using only visual input. Built for iOS with Apple ARKit, this assistant leverages the GPT-4o-mini vision model to guide users through recipes with minimal interaction.
 
 ## Overview
 
-The AR Recipe Assistant project aims to create an AR experience with a head-mounted display where users can:
-- **Detect food items** in the real world using YOLO object detection.
-- **Localize objects** in 3D space using ORB-SLAM.
-- **Generate recipes** by filtering detected ingredients and querying a GPT-based API.
-- (Stretch Goal) Access guided AR cooking instructions through an intuitive interface.
+This project introduces two generalizable methods for automatic recipe step detection in augmented reality:
+### Method 1: YOLO + LLM
+- Detects objects in the camera feed
+- Keeps track of object history and state
+- Uses an LLM to infer the current recipe step
+### Method 2: Vision-Language Model
+- Uses a VLM (GPT-4o) to infer the current step directly from the camera image
 
 ## Features
 
-- **Real-Time Object Detection:** Identify food items in video streams.
-- **3D World Mapping:** Persistently maps the environment.
-- **GPT-Based Recipe Generation:** Filters detected ingredients and generates recipes.
-- **AR Interface:** Displays detected food items and recipes on an AR overlay using an HMD.
+- **Recipe Step Detection** via visual input
+- **Recipe Generation** from ingredients in the scene
+- **On-device AR Interface** using Apple ARKit
+- **GPT-4o Integration** for LLM & VLM reasoning
+- **Object Detection** powered by YOLOv8 on-device
 
-## Hardware & Software Requirements
+## Usage
 
-### Hardware
-- **Mobile Phone with RGB Camera:** For capturing video.
-- **AR Headset:** For enhanced AR immersion.
+### Requirements
+- iOS device
+- Xcode with ARKit support
+- OpenAI API key for GPT-4o
 
-### Software
-- **ORB-SLAM:** [GitHub Link](https://github.com/raulmur/ORB_SLAM)
-- **YOLO:** [GitHub Link](https://github.com/THU-MIG/yolov10)
-- **OpenAI GPT API:** [Documentation](https://platform.openai.com/docs/overview)
-- **ARCore:** [Documentation](https://developers.google.com/ar)
-
-## Installation
-
-### 1. Clone the Repository
+### Install & Run
 ```bash
 git clone https://github.com/your-username/AR-Recipe-Assistant.git
 cd AR-Recipe-Assistant
 ```
+1. Configure OpenAI API key in Secrets.swift
+2. Choose YOLO or VLM from settings
+3. Press "Generate Recipe" while pointing the camera at ingredients
 
 ## License
 This project is licensed under the MIT License.
